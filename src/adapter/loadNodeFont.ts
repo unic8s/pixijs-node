@@ -14,6 +14,8 @@ const validFonts = ['.woff', '.woff2', '.ttf', '.otf'];
 export const loadNodeFont = {
     extension: ExtensionType.LoadParser,
 
+    name: 'loadFont',
+
     test(url: string): boolean
     {
         return validFonts.includes(utils.path.extname(url).toLowerCase());
